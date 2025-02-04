@@ -1,0 +1,38 @@
+:root {
+    --gap: 24px;
+    --content-gap: 20px;
+    --nav-width: 1024px;
+    --main-width: 720px;
+    --header-height: 60px;
+    --footer-height: 60px;
+    --radius: 8px;
+    --theme: #ecf0f4;
+    --entry: #ecf0f4;
+    --primary: #202c39;
+    --secondary: #405872;
+    --tertiary: r#ecf0f4;
+    --content: #202c39;
+    --code-block-bg: #202c39;
+    --code-bg: #ecf0f4;
+    --border: #ecf0f4;
+}
+
+.dark {
+    --theme: #202c39;
+    --entry: #202c39;
+    --primary: #ecf0f4;
+    --secondary: #c5d1de;
+    --tertiary: #202c39;
+    --content: #ecf0f4;
+    --code-block-bg: #202c39;
+    --code-bg: #ecf0f4;
+    --border: #202c39;
+}
+
+.list {
+    background: var(--code-bg);
+}
+
+.dark.list {
+    background: var(--theme);
+}

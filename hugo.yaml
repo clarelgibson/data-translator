@@ -2,3 +2,18 @@ baseURL: ""
 languageCode: en-us
 title: Data Translator
 theme: PaperMod
+
+menu:
+  main:
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 10
+    - identifier: archive
+      name: archive
+      url: /archive/
+      weight: 20
+
+params:
+  ShowReadingTime: true
+  ShowShareButtons: true

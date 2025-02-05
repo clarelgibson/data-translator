@@ -11,11 +11,11 @@ menu:
       weight: 5
     - identifier: portfolio
       name: portfolio
-      url: /categories/portfolio/
+      url: /portfolio/
       weight: 10
     - identifier: blog
       name: blog
-      url: /categories/blog/
+      url: /blog/
       weight: 20
 
 params:

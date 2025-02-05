@@ -5,19 +5,23 @@ theme: PaperMod
 
 menu:
   main:
+    - identifier: about
+      name: about
+      url: /about/
+      weight: 5
     - identifier: portfolio
       name: portfolio
       url: /categories/portfolio/
       weight: 10
-    - identifier: thoughts
-      name: thoughts
-      url: /categories/business
+    - identifier: blog
+      name: blog
+      url: /categories/blog/
       weight: 20
 
 params:
   ShowReadingTime: true
   ShowShareButtons: true
-  ShowBreadCrumbs: true
+  ShowBreadCrumbs: false
   comments: true
   
   socialIcons:

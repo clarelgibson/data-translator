@@ -7,27 +7,27 @@
     --footer-height: 60px;
     --radius: 8px;
     --theme: #ecf0f4;
-    --entry: #ecf0f4;
+    --entry: #c5d1de;
     --primary: #202c39;
     --secondary: #405872;
-    --tertiary: r#ecf0f4;
+    --tertiary: #c5d1de;
     --content: #202c39;
     --code-block-bg: #202c39;
     --code-bg: #ecf0f4;
-    --border: #ecf0f4;
+    --border: #c5d1de;
     --highlight: #ff4f5c;
 }
 
 .dark {
     --theme: #202c39;
-    --entry: #202c39;
+    --entry: #405872;
     --primary: #ecf0f4;
     --secondary: #c5d1de;
-    --tertiary: #202c39;
+    --tertiary: #405872;
     --content: #ecf0f4;
     --code-block-bg: #ecf0f4;
     --code-bg: #202c39;
-    --border: #202c39;
+    --border: #405872;
     --highlight: #ff4f5c;
 }
 

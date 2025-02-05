@@ -8,14 +8,10 @@ menu:
     - identifier: portfolio
       name: portfolio
       url: /categories/portfolio/
-      weight: 5
-    - identifier: categories
-      name: categories
-      url: /categories/
       weight: 10
-    - identifier: archive
-      name: posts
-      url: /archive/
+    - identifier: thoughts
+      name: thoughts
+      url: /categories/business
       weight: 20
 
 params:

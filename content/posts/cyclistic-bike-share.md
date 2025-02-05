@@ -1,13 +1,13 @@
 ---
 date: '2025-02-04T22:35:47Z'
 draft: false
-title: 'Cyclistic Bike Share: A case study'
+title: 'Cyclistic bike-share: A case study'
 cover:
     image: img/cyclistic-banner.png
     alt: 'Modern stationary bicycles in gym with the Cyclistic logo'
     caption: 'Photo by [Maarten van den Heuvel](https://www.pexels.com/photo/modern-stationary-bicycles-in-gym-4254902/)'
 categories: ['portfolio']
-tags: ['bike-share', 'case-study']
+tags: ['bike-share', 'case-study', 'tableau']
 ---
 
 *This case study is my capstone submission to the [Google Data Analytics Professional Certificate](https://www.coursera.org/professional-certificates/google-data-analytics)*

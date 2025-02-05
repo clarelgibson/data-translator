@@ -3,7 +3,7 @@ date: '2024-11-11T15:58:15Z'
 draft: false
 title: 'Solving business challenges one "cube" at a time'
 cover:
-    image: img/rubiks-crop-5184x1840.png
+    image: img/rubiks-16x4.png
     alt: 'Photo of a solved 3x3 rubiks cube'
     caption: 'Photo by [Jadson Thomas](https://www.pexels.com/photo/3-by-3-rubik-s-cube-selective-focus-photography-1500610/)'
 tags: ['business', 'leadership', 'rubiks']

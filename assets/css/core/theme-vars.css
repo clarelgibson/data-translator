@@ -15,6 +15,7 @@
     --code-block-bg: #202c39;
     --code-bg: #ecf0f4;
     --border: #ecf0f4;
+    --highlight: #ff4f5c;
 }
 
 .dark {
@@ -24,9 +25,10 @@
     --secondary: #c5d1de;
     --tertiary: #202c39;
     --content: #ecf0f4;
-    --code-block-bg: #202c39;
-    --code-bg: #ecf0f4;
+    --code-block-bg: #ecf0f4;
+    --code-bg: #202c39;
     --border: #202c39;
+    --highlight: #ff4f5c;
 }
 
 .list {

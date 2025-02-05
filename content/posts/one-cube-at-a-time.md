@@ -6,8 +6,8 @@ cover:
     image: img/rubiks-crop-5184x1840.png
     alt: 'Photo of a solved 3x3 rubiks cube'
     caption: 'Photo by [Jadson Thomas](https://www.pexels.com/photo/3-by-3-rubik-s-cube-selective-focus-photography-1500610/)'
-tags: ['business', 'leadership']
-categories: ['leadership']
+tags: ['business', 'leadership', 'rubiks']
+categories: ['business']
 ---
 
 *Inspired by “Cubing from the Corner Office” by Meghan Walsh, published in Korn Ferry's Briefings Magazine. You can read the original article [here](https://www.kornferry.com/insights/briefings-magazine/issue-66/cubing-from-the-corner-office?utm_source=allsoc&utm_medium=soc&utm_campaign=24-10-gbl-briefings-magazine&utm_content=briefings-article).*

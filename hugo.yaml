@@ -5,12 +5,16 @@ theme: PaperMod
 
 menu:
   main:
+    - identifier: portfolio
+      name: portfolio
+      url: /categories/portfolio/
+      weight: 5
     - identifier: categories
       name: categories
       url: /categories/
       weight: 10
     - identifier: archive
-      name: archive
+      name: posts
       url: /archive/
       weight: 20
 

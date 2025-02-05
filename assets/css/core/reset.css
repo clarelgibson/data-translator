@@ -26,6 +26,7 @@ h6 {
 body {
     font-family: 'Sofia Sans', sans-serif;
     font-size: 18px;
+    font-weight: 300;
     line-height: 1.6;
     word-break: break-word;
     background: var(--theme);
@@ -39,7 +40,10 @@ footer,
 header,
 hgroup,
 main,
-nav,
+nav {
+    color: var(--primary);
+}
+
 section,
 table {
     display: block;

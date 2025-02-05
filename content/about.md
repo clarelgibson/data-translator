@@ -1,6 +1,5 @@
 ---
 date: '2025-02-05T14:47:52Z'
-draft: false
 title: 'About me'
 hidemeta: true
 cover:

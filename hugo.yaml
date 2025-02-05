@@ -17,6 +17,10 @@ menu:
       name: blog
       url: /blog/
       weight: 20
+    - identifer: archive
+      name: archive
+      url: /archive/
+      weight: 40
 
 params:
   ShowReadingTime: true

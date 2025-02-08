@@ -7,7 +7,7 @@ cover:
     alt: 'Modern stationary bicycles in gym with the Cyclistic logo'
     caption: 'Photo by [Maarten van den Heuvel](https://www.pexels.com/photo/modern-stationary-bicycles-in-gym-4254902/)'
 categories: ['portfolio']
-tags: ['bike-share', 'case-study', 'tableau']
+tags: ['data analysis', 'case study', 'tableau', 'data visualisation', 'data cleansing']
 ---
 
 *This case study is my capstone submission to the [Google Data Analytics Professional Certificate](https://www.coursera.org/professional-certificates/google-data-analytics).*

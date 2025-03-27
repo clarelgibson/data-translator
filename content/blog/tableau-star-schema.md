@@ -5,7 +5,7 @@ title: 'Build a multi-fact star schema in Tableau in 5 easy steps'
 categories: ['blog']
 tags: ['tableau', 'dimensional-modelling', 'star-schema', 'multi-fact-analysis']
 cover:
-    image: img/star-schema-16x5.png
+    image: img/star-schema-16x5.jpg
     alt: 'Group of people putting fingers together to form a star shape'
     caption: 'Photo by [Mikael Blomkvist](https://www.pexels.com/photo/hands-making-a-star-6476771/)'
 ---

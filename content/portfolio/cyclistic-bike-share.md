@@ -3,7 +3,7 @@ date: '2025-02-04T22:35:47Z'
 draft: false
 title: 'Cyclistic bike-share: a case study'
 cover:
-    image: img/cyclistic-banner.png
+    image: img/cyclistic-banner.jpg
     alt: 'Modern stationary bicycles in gym with the Cyclistic logo'
     caption: 'Photo by [Maarten van den Heuvel](https://www.pexels.com/photo/modern-stationary-bicycles-in-gym-4254902/)'
 categories: ['portfolio']

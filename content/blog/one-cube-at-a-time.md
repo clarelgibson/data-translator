@@ -3,7 +3,7 @@ date: '2024-11-11T15:58:15Z'
 draft: false
 title: 'Solving business challenges one "cube" at a time'
 cover:
-    image: img/rubiks-16x4.png
+    image: img/rubiks-16x4.jpg
     alt: 'Photo of a solved 3x3 rubiks cube'
     caption: 'Photo by [Jadson Thomas](https://www.pexels.com/photo/3-by-3-rubik-s-cube-selective-focus-photography-1500610/)'
 tags: ['business', 'leadership', 'rubiks']
@@ -26,9 +26,8 @@ In the world of business, we’re often faced with challenges that seem as intri
 As I read Walsh’s piece, I couldn’t help but think about my own experience with the Rubik’s Cube. When my son got his first Cube a couple of years ago, I knew that at age five, he wouldn’t be able to solve it on his own. I decided I would learn it myself so I could teach him, and it became a labour of love. Through our evening sessions, I guided him, teaching him the steps and sharing in his joy as he persevered, step by step. Just recently, he solved the Cube entirely on his own for the first time! Watching him make the connection between effort and success was inspiring, and I can see him on his way to becoming a speed cuber himself.
 
 {{< figure
-  src="/img/rowan-solves-cube.png"
+  src="/img/rowan-solves-cube.jpg"
   alt="A boy looking very happy, holding a trophy and a Rubik's cube"
-  link="https://www.pexels.com/photo/a-boy-holding-rubiks-cube-8423875/"
   caption="Rowan's first solve"
   align=center
   width=350

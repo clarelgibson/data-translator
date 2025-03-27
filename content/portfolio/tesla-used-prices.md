@@ -3,7 +3,7 @@ date: '2023-05-25T12:23:12Z'
 draft: false
 title: 'Tesla used prices'
 cover:
-    image: img/tesla-16x4.png
+    image: img/tesla-16x4.jpg
     alt: 'Photo of a white Tesla Model 3 on the road'
     caption: 'Photo by [David Gari](https://www.pexels.com/photo/white-tesla-model-3-car-on-road-9300916/)'
 tags: ['tesla', 'dashboard', 'tableau']

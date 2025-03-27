@@ -3,7 +3,7 @@ date: '2025-02-05T14:47:52Z'
 title: 'About me'
 hidemeta: true
 cover:
-    image: img/clare-02.png
+    image: img/clare-02.jpg
     alt: 'Clare Gibson'
 ---
 

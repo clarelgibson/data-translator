@@ -42,7 +42,7 @@ params:
     enabled: true
     title: "Clare Gibson"
     subtitle: "Data analyst, product owner, lifelong learner"
-    imageUrl: "img/clare-01.png"
+    imageUrl: "img/clare-01.jpg"
     imageTitle:
     imageWidth: 150
     imageHeight: 150

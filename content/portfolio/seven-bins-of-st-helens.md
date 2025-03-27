@@ -3,7 +3,7 @@ date: '2023-11-03T21:40:24Z'
 draft: false
 title: 'The seven bins of St Helens'
 cover:
-    image: img/recycling.png
+    image: img/recycling.jpg
     alt: 'A group of household recyclable materials on a kitchen counter'
     caption: 'Photo by [SHVETS production](https://www.pexels.com/photo/woman-selecting-glass-into-plastic-container-7512859/)'
 categories: ['portfolio']

@@ -10,6 +10,8 @@ tags: ['journal']
 categories: ['blog']
 ---
 
+[GitHub](https://github.com/clarelgibson/momento-to-day-one)
+
 For the past few years, I've kept a private, digital journal filled with photos and stories about family life. I used an app called [Momento](https://momentoapp.com), but recently decided to switch to [Day One](https://dayoneapp.com) because it offers me several advantages:
 
 ## Why choose **{{< colour "#6fbef7" >}}Day One{{< /colour >}}** over **{{< colour "#c26c2e" >}}Momento{{< /colour >}}**?
@@ -84,6 +86,12 @@ This needs to be converted to a format that **{{< colour "#6fbef7" >}}Day One{{<
 * `date` must be provided in ISO 8601 format, including 3 decimal places for milliseconds, like this: `2017-02-25T10:54:00.000Z`.
 
 If you're comfortable with basic coding, I have shared an [R script on GitHub](https://github.com/clarelgibson/momento-to-day-one) that automates the conversion, using only the `date` and `text` fields.
+
+### Tips for JSON
+
+* While **{{< colour "#6fbef7" >}}Day One{{< /colour >}}** does provide an [example file](https://dayoneapp.com/blog/help_guides/importing-data-from-json-files/) that shows the expected JSON structure, I recommend creating a couple of test entries in a temporary journal within **{{< colour "#6fbef7" >}}Day One{{< /colour >}}**, including whatever elements you expect to be importing (text, media, tags, location etc) and then export that journal to a JSON zip file. That way you have a better sense of how the JSON file relates to the front-end journal entries.
+
+If you're comfortable with basic coding, I have shared a [python script on GitHub](https://github.com/clarelgibson/momento-to-day-one) that automates the conversion.
 
 ## Step 3: Import data into **{{< colour "#6fbef7" >}}Day One{{< /colour >}}**
 

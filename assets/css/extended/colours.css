@@ -1,0 +1,44 @@
+/* assets/css/extended/colours.css
+   Data Translator brand colours mapped onto PaperMod's theme variables.
+   Loaded automatically after the theme's core CSS, so these win. */
+
+:root {
+    /* Light mode */
+    --theme: #ECF0F4;      /* page background */
+    --entry: #FFFFFF;      /* cards / post entries */
+    --primary: #202C39;    /* headings, strong text */
+    --content: #202C39;    /* body text */
+    --secondary: #55868C;  /* meta: dates, reading time */
+    --tertiary: #DCE1E7;   /* tag fills, subtle areas */
+    --border: #DCE1E7;     /* hairline borders */
+}
+
+.dark {
+    /* Dark mode */
+    --theme: #202C39;
+    --entry: #2A3845;
+    --primary: #ECF0F4;
+    --content: #C7CCD1;
+    --secondary: #7BA9AF;
+    --tertiary: #34404C;
+    --border: #34404C;
+}
+
+/* Links: calm at rest, coral on hover */
+.post-content a {
+    color: var(--content);                 /* body navy in light, soft grey in dark */
+    box-shadow: 0 1px 0 var(--secondary);  /* subtle teal underline marks the link */
+}
+.post-content a:hover {
+    color: #FF4F5C;                        /* coral appears only on hover */
+    box-shadow: 0 1px 0 #FF4F5C;
+}
+
+/* Coral accent — buttons (profile-mode + "read more") */
+.button {
+    background: #FF4F5C;
+    color: #FFFFFF;
+}
+.button:hover {
+    background: #E63E4B;
+}

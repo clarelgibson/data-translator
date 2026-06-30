@@ -35,8 +35,6 @@ params:
         url: about
       - name: Projects
         url: projects
-      - name: CV
-        url: cv
 
 menu:
   main:
@@ -48,7 +46,3 @@ menu:
       name: Projects
       url: /projects/
       weight: 20
-    - identifier: cv
-      name: CV
-      url: /cv/
-      weight: 30

@@ -1,0 +1,54 @@
+baseURL: "https://datatranslator.co.uk/"
+locale: "en-gb"
+title: "Data Translator"
+theme: "PaperMod"
+
+# Pretty URLs and correct output for Papermod
+enableRobotsTXT: true # generates robots.txt file so search engines can index your site
+buildDrafts: false # content marked as draft will not be published
+buildFuture: false # content with a publishDate in the future will not be published
+
+# Strip whitespace from HTML output to reduce file size and improve page load times
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: "Data Translator"
+  description: "Data analytics portfolio of Clare Gibson"
+  author: "Clare Gibson"
+  defaultTheme: auto
+  ShowShareButtons: false
+  ShowReadingTime: true
+  ShowBreadcrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  homeMode: profile
+
+  profileMode:
+    enabled: true
+    title: "Clare Gibson"
+    subtitle: "Translating data into decisions"
+    buttons:
+      - name: About
+        url: about
+      - name: Projects
+        url: projects
+      - name: CV
+        url: cv
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 20
+    - identifier: cv
+      name: CV
+      url: /cv/
+      weight: 30

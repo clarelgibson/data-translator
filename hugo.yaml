@@ -36,6 +36,17 @@ params:
       - name: Projects
         url: projects
 
+  assets:
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    appleTouchIcon: "/apple-touch-icon.png"
+
+  label:
+    text: "Data Translator"
+    icon: "/img/dt-logo.png"
+    iconHeight: 32
+
 menu:
   main:
     - identifier: about

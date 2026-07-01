@@ -1,0 +1,11 @@
+{
+  "name": "Data Translator",
+  "short_name": "Data Translator",
+  "icons": [
+    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#202C39",
+  "background_color": "#202C39",
+  "display": "standalone"
+}

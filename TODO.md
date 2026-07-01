@@ -4,17 +4,17 @@
 - [X] Step 1: content (About done; Projects landing + 3 case studies remaining)
 - [X] the Experience block becomes part of the current "content" step (it's just more of the About page)
 - [X] Branding: colours, then fonts, then logo/favicon
+- [X] GitHub Actions deployment
 
 ## Now
-- [ ] GitHub Actions deployment
-
-## Next (agreed sequence)
 - [ ] DNS at Ionos (point domain at GitHub; fix redirect)
 
-## Someday / ideas
+## Next (agreed sequence)
 - [ ] Add school-admissions and COVID-19 projects (mentioned in CV)
 - [ ] Rewrite front matter and figure shortcodes to allow for image optimization
 - [ ] Write documentation for GitHub (README) - ensure that I have a guide to adding new content in the future
+
+## Someday / ideas
 - [ ] Add project for Race Across The World game
 - [ ] Build out template instructions for creating new projects (how will the portfolio site link to the place where the project is hosted, e.g. Tableau Public)
 - [ ] Add a photo to the About page

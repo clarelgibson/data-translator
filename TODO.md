@@ -5,7 +5,7 @@
 - [X] the Experience block becomes part of the current "content" step (it's just more of the About page)
 
 ## Now
-- [ ] Branding: colours, then fonts, then logo/favicon
+- [ ] Branding: colours (done), then fonts (done), then logo/favicon
 
 ## Next (agreed sequence)
 - [ ] GitHub Actions deployment

@@ -3,12 +3,12 @@
 ## Done
 - [X] Step 1: content (About done; Projects landing + 3 case studies remaining)
 - [X] the Experience block becomes part of the current "content" step (it's just more of the About page)
+- [X] Branding: colours, then fonts, then logo/favicon
 
 ## Now
-- [ ] Branding: colours (done), then fonts (done), then logo/favicon
+- [ ] GitHub Actions deployment
 
 ## Next (agreed sequence)
-- [ ] GitHub Actions deployment
 - [ ] DNS at Ionos (point domain at GitHub; fix redirect)
 
 ## Someday / ideas

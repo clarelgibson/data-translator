@@ -5,23 +5,25 @@
 :root {
     /* Light mode */
     --theme: #ECF0F4;      /* page background */
-    --entry: #FFFFFF;      /* cards / post entries */
+    --entry: #ECF0F4;      /* cards / post entries */
     --primary: #202C39;    /* headings, strong text */
     --content: #202C39;    /* body text */
     --secondary: #55868C;  /* meta: dates, reading time */
     --tertiary: #DCE1E7;   /* tag fills, subtle areas */
     --border: #DCE1E7;     /* hairline borders */
+    --code-bg: #ECF0F4;    /* code block background */
 }
 
 .dark {
     /* Dark mode */
     --theme: #202C39;
-    --entry: #2A3845;
+    --entry: #202C39;
     --primary: #ECF0F4;
-    --content: #C7CCD1;
+    --content: #ECF0F4;
     --secondary: #7BA9AF;
     --tertiary: #34404C;
     --border: #34404C;
+    --code-bg: #202C39;
 }
 
 /* Links: calm at rest, coral on hover */
@@ -40,5 +42,5 @@
     color: #FFFFFF;
 }
 .button:hover {
-    background: #E63E4B;
+    background: #FF4F5C;
 }

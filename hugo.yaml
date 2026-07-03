@@ -30,6 +30,10 @@ params:
     enabled: true
     title: "Clare Gibson"
     subtitle: "Translating data into decisions"
+    imageUrl: "/img/clare-headshot.jpg"
+    imageTitle: "Clare Gibson"
+    imageWidth: 200
+    imageHeight: 200
     buttons:
       - name: About
         url: about

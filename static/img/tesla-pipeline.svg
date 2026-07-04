@@ -1,0 +1,56 @@
+<svg viewBox="0 0 925 350" xmlns="http://www.w3.org/2000/svg" font-family="Poppins, 'Segoe UI', system-ui, sans-serif">
+  <!-- self-contained panel so the diagram reads the same in light and dark mode -->
+  <rect x="0" y="0" width="925" height="350" rx="16" fill="#ECF0F4"/>
+  <rect x="1.5" y="1.5" width="922" height="347" rx="15" fill="none" stroke="#55868C" stroke-opacity="0.3" stroke-width="2"/>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#55868C"/>
+    </marker>
+  </defs>
+
+  <!-- title -->
+  <text x="462" y="40" text-anchor="middle" font-size="21" font-weight="700" fill="#202C39">Automated data pipeline</text>
+
+  <!-- GitHub Actions scheduler -->
+  <rect x="260" y="72" width="180" height="58" rx="10" fill="#FF4F5C"/>
+  <text x="350" y="97" text-anchor="middle" font-size="14" font-weight="600" fill="#FFFFFF">GitHub Actions</text>
+  <text x="350" y="116" text-anchor="middle" font-size="12" fill="#FFFFFF">daily schedule</text>
+
+  <!-- scheduler -> R -->
+  <line x1="350" y1="130" x2="350" y2="177" stroke="#55868C" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="360" y="160" text-anchor="start" font-size="11" fill="#202C39">triggers</text>
+
+  <!-- stage 1: API -->
+  <rect x="40" y="180" width="170" height="100" rx="12" fill="#202C39"/>
+  <text x="125" y="222" text-anchor="middle" font-size="15" font-weight="600" fill="#ECF0F4">Tesla</text>
+  <text x="125" y="244" text-anchor="middle" font-size="15" font-weight="600" fill="#ECF0F4">inventory API</text>
+
+  <!-- stage 2: R -->
+  <rect x="265" y="180" width="170" height="100" rx="12" fill="#202C39"/>
+  <text x="350" y="220" text-anchor="middle" font-size="15" font-weight="600" fill="#ECF0F4">R script</text>
+  <text x="350" y="244" text-anchor="middle" font-size="11" fill="#ECF0F4" fill-opacity="0.75">extract &#183; clean &#183; transform</text>
+
+  <!-- stage 3: Sheet -->
+  <rect x="490" y="180" width="170" height="100" rx="12" fill="#202C39"/>
+  <text x="575" y="222" text-anchor="middle" font-size="15" font-weight="600" fill="#ECF0F4">Google</text>
+  <text x="575" y="244" text-anchor="middle" font-size="15" font-weight="600" fill="#ECF0F4">Sheet</text>
+
+  <!-- stage 4: Tableau -->
+  <rect x="715" y="180" width="170" height="100" rx="12" fill="#202C39"/>
+  <text x="800" y="222" text-anchor="middle" font-size="15" font-weight="600" fill="#ECF0F4">Tableau Public</text>
+  <text x="800" y="244" text-anchor="middle" font-size="15" font-weight="600" fill="#ECF0F4">dashboard</text>
+
+  <!-- flow arrows -->
+  <line x1="210" y1="230" x2="264" y2="230" stroke="#55868C" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="435" y1="230" x2="489" y2="230" stroke="#55868C" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="660" y1="230" x2="714" y2="230" stroke="#55868C" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- flow labels -->
+  <text x="237" y="221" text-anchor="middle" font-size="10.5" fill="#202C39">pull</text>
+  <text x="462" y="221" text-anchor="middle" font-size="10.5" fill="#202C39">write</text>
+  <text x="687" y="221" text-anchor="middle" font-size="10.5" fill="#202C39">live link</text>
+
+  <!-- note -->
+  <text x="800" y="302" text-anchor="middle" font-size="11" font-style="italic" fill="#55868C">auto-refreshes from the Sheet</text>
+</svg>

@@ -1,0 +1,5 @@
+/* Summary block on project pages: hide the mandatory table header
+   so the block starts at the first data row, no empty band on top. */
+.post-content table:first-of-type thead {
+    display: none;
+}

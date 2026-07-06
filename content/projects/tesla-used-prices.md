@@ -7,7 +7,6 @@ cover:
     alt: 'Photo of a white Tesla Model 3 on the road'
     caption: 'Photo by [David Gari](https://www.pexels.com/photo/white-tesla-model-3-car-on-road-9300916/)'
 tags: ['tesla', 'dashboard', 'tableau']
-categories: ['portfolio']
 ---
 
 | Field | Detail |

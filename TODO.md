@@ -28,3 +28,4 @@
 - [ ] Optional: simple one-page CV PDF for passers-by, linked in nav/footer - similar to the one on [this site](https://perryw-2023.webflow.io)
 - [ ] Investigate dynamic image sizing for project posts. Currently I manually crop each image before uploading it to `static/img` but maybe there is a way to get Hugo to do the resizing for me?
 - [ ] Adjust the project summary text for each project on the project landing page so that it displays just the content inside Goal/Detail from the initial table. I don't want to display the column headings in this preview text.
+- [ ] Add a project for the race across the world game I built with Claude Code

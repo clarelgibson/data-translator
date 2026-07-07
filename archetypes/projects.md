@@ -7,7 +7,6 @@ cover:
     alt: ''
     caption: ''
 tags: []
-categories: ['portfolio']
 ---
 
 | Field | Detail |

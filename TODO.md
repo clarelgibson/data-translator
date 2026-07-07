@@ -8,9 +8,11 @@
 - [X] DNS at Ionos (point domain at GitHub; fix redirect)
 - [X] Write documentation for GitHub (README) - ensure that I have a guide to adding new content in the future
 - [X] Add a photo to the profile page
+- [X] Tighten up structure, consistency and content of each project write-up. Ask Claude to give a critical review in the role of a potential employer.
 
 ## Now
-- [ ] Tighten up structure, consistency and content of each project write-up. Ask Claude to give a critical review in the role of a potential employer.
+- [ ] Rewrite front matter and figure shortcodes to allow for image optimization
+- [ ] Migrate the hand-written summary block for Project write-ups to front matter and using Hugo archtype
 
 ## Next (agreed sequence)
 - [ ] Change body font from Poppins to Work Sans
@@ -20,13 +22,12 @@
 - [ ] Is there a better layout for my Projects landing page so that more than one project could be displayed horizontally?
 
 ## Someday / ideas
-- [ ] Rewrite front matter and figure shortcodes to allow for image optimization
-- [ ] Migrate the hand-written summary block for Project write-ups to front matter and using Hugo archtype
 - [ ] Add school-admissions and COVID-19 projects (mentioned in CV)
-- [ ] Add project for Race Across The World game - I am coding this in Claude Code and I would love to host it on this site when it's ready
-- [ ] Build out template instructions for creating new projects (how will the portfolio site link to the place where the project is hosted, e.g. Tableau Public)
 - [ ] Optional: simple one-page CV PDF for passers-by, linked in nav/footer - similar to the one on [this site](https://perryw-2023.webflow.io)
 - [ ] Investigate dynamic image sizing for project posts. Currently I manually crop each image before uploading it to `static/img` but maybe there is a way to get Hugo to do the resizing for me?
 - [ ] Adjust the project summary text for each project on the project landing page so that it displays just the content inside Goal/Detail from the initial table. I don't want to display the column headings in this preview text.
 - [ ] Add a project for the race across the world game I built with Claude Code
 - [ ] Have Claude act as a data science tutor to guide me through a cluster analysis on the Seven Bins data, using the work I have already done as a starting point and taking it to a meaningful conclusion.
+
+## Removed (no longer needed)
+- [ ] Build out template instructions for creating new projects (how will the portfolio site link to the place where the project is hosted, e.g. Tableau Public)

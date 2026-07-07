@@ -31,7 +31,7 @@ I recently visited my parents, who live in St Helens, a town in Merseyside, nort
 
 This system of recycling, called [kerbside sort](https://en.wikipedia.org/wiki/Kerbside_collection#United_Kingdom), puts the burden of sorting the recyclable material on the resident. Kerbside sort systems can be two-stream (a smaller number of separate containers) or multi-stream (many separate containers, as in St Helens). As my mum can attest, it is pretty onerous and sometimes confusing to work out what belongs in each bin or box, and when they each have to be put out for collection. In other parts of the UK, including in Waverley, where I live, the local authority employs a [co-mingled recycling](https://en.wikipedia.org/wiki/Single-stream_recycling) system, where all of the non-organic recyclable material is put into a single bin and the sorting takes place at a [Materials Recovery Facility](https://en.wikipedia.org/wiki/Materials_recovery_facility).
 
-## Question or goal
+## Question
 
 > **Do councils who employ a kerbside sort system achieve higher recycling rates than those who employ the co-mingled system?**
 

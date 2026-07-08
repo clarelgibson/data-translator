@@ -126,7 +126,7 @@ Edit `content/projects/_index.md`.
 | Coral (hover accent only) | `#FF4F5C` |
 | Amber (reserve) | `#EDAE49` |
 
-Fonts are self-hosted in `static/fonts/` and declared in `assets/css/extended/fonts.css`, which is the source of truth for families and weights (currently Playfair Display 700 for headings, Poppins 300/300 italic/600 for body text).
+Fonts are self-hosted in `static/fonts/` and declared in `assets/css/extended/fonts.css`, which is the source of truth for families and weights (currently Playfair Display 700 for headings, Work Sans 300/300 italic/600 for body text).
 
 ## Deployment
 

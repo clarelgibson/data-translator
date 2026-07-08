@@ -31,6 +31,7 @@
 - [ ] Have Claude act as a data science tutor to guide me through a cluster analysis on the Seven Bins data, using the work I have already done as a starting point and taking it to a meaningful conclusion.
 - [ ] Generate a true svg file for the logo as the one I have is a bitmap in disguise.
 - [ ] Add social icons (Tableau Public, GitHub and LinkedIn) to my home page
+- [ ] Restructure the experience section of my About page to be tabular - like the Perry site
 
 ## Removed (no longer needed)
 - [ ] Build out template instructions for creating new projects (how will the portfolio site link to the place where the project is hosted, e.g. Tableau Public)

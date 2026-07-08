@@ -1,0 +1,6 @@
+/* assets/css/extended/home.css
+   Home page (profile mode) tweaks. */
+
+.profile .profile_inner h1 {
+    font-size: clamp(2.25rem, 5vw, 3.5rem);
+}

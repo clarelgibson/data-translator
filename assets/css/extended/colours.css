@@ -12,6 +12,7 @@
     --tertiary: #DCE1E7;   /* tag fills, subtle areas */
     --border: #DCE1E7;     /* hairline borders */
     --code-bg: #ECF0F4;    /* code block background */
+    --accent: #FF4F5C;     /* coral: links, buttons, highlights */
 }
 
 .dark {
@@ -24,24 +25,25 @@
     --tertiary: #34404C;
     --border: #34404C;
     --code-bg: #202C39;
+    --accent: #FF4F5C;     /* coral: links, buttons, highlights */
 }
 
 /* Links: coral underline at rest, full coral on hover */
 .post-content a:not(.anchor) {
     color: var(--content);
     text-decoration: none;            /* switch off the theme's navy/grey underline */
-    box-shadow: 0 1px 0 #FF4F5C;    /* leaving only the coral line */
+    box-shadow: 0 1px 0 var(--accent);    /* leaving only the coral line */
 }
 .post-content a:hover {
-    color: #FF4F5C;
-    box-shadow: 0 1px 0 #FF4F5C;
+    color: var(--accent);
+    box-shadow: 0 1px 0 var(--accent);
 }
 
 /* Coral accent — buttons (profile-mode + "read more") */
 .button {
-    background: #FF4F5C;
+    background: var(--accent);
     color: #FFFFFF;
 }
 .button:hover {
-    background: #FF4F5C;
+    background: var(--accent);
 }

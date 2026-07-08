@@ -15,10 +15,11 @@
 - [X] Repeat steps to convert Tesla to the new scaffold - we need to amend the render hook first to work with the .svg file.
 - [X] Update the README to give instructions on how to create a new project now that I have changed the process. Be sure to include a reference to the command needed to create a new project: `hugo new content projects/<name>`
 - [X] Change body font from Poppins to Work Sans
+- [X] Make my name bigger on the home page 
+- [X] Add more of the primary accent colour into the site. Perhaps use for URL underlines.
 
 ## Now
-- [ ] Make my name bigger on the home page 
-- [ ] Add more of the primary accent colour into the site. Perhaps use for URL underlines.
+
 
 ## Next (agreed sequence)
 - [ ] Is there a better layout for my Projects landing page so that more than one project could be displayed horizontally?

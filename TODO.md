@@ -19,20 +19,26 @@
 - [X] Add more of the primary accent colour into the site. Perhaps use for URL underlines.
 
 ## Now
-
+- [ ] Projects landing page redesign (new chat — distinct phase).
+      Tackle as one connected piece, in this order:
+  1. Decide the standard cover aspect ratio first. Current covers are
+     2.83:1, 3.2:1 and 4.0:1; needs to be one ratio before cards can sit
+     neatly side by side. Candidates to weigh: 2:1, 16:9, 3:1.
+  2. Enforce the chosen ratio via a cover.html partial override using
+     Fill, so covers crop automatically and no longer need manual cropping.
+  3. Redesign list.html for a horizontal multi-card layout, building on
+     the project_summary.goal field already feeding the cards.
 
 ## Next (agreed sequence)
-- [ ] Is there a better layout for my Projects landing page so that more than one project could be displayed horizontally?
-- [ ] Enforce a standard cover image aspect ratio via a cover.html partial override using Fill, so covers no longer need manual cropping. Decide the ratio first (current covers are 2.83:1, 3.2:1 and 4.0:1). Consider alongside the Projects landing page redesign.
+- [ ] Generate a true svg file for the logo as the one I have is a bitmap in disguise.
+- [ ] Add social icons (Tableau Public, GitHub and LinkedIn) to my home page
+- [ ] Restructure the experience section of my About page to be tabular - like the [Perry site](https://perryw-2023.webflow.io)
 
 ## Someday / ideas
 - [ ] Add school-admissions and COVID-19 projects (mentioned in CV)
 - [ ] Optional: simple one-page CV PDF for passers-by, linked in nav/footer - similar to the one on [this site](https://perryw-2023.webflow.io)
 - [ ] Add a project for the race across the world game I built with Claude Code
 - [ ] Have Claude act as a data science tutor to guide me through a cluster analysis on the Seven Bins data, using the work I have already done as a starting point and taking it to a meaningful conclusion.
-- [ ] Generate a true svg file for the logo as the one I have is a bitmap in disguise.
-- [ ] Add social icons (Tableau Public, GitHub and LinkedIn) to my home page
-- [ ] Restructure the experience section of my About page to be tabular - like the Perry site
 
 ## Removed (no longer needed)
 - [ ] Build out template instructions for creating new projects (how will the portfolio site link to the place where the project is hosted, e.g. Tableau Public)

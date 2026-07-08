@@ -14,9 +14,9 @@
 - [X] Repeat steps to convert Seven Bins to the new scaffold
 - [X] Repeat steps to convert Tesla to the new scaffold - we need to amend the render hook first to work with the .svg file.
 - [X] Update the README to give instructions on how to create a new project now that I have changed the process. Be sure to include a reference to the command needed to create a new project: `hugo new content projects/<name>`
+- [X] Change body font from Poppins to Work Sans
 
 ## Now
-- [ ] Change body font from Poppins to Work Sans
 - [ ] Make my name bigger on the home page 
 - [ ] Add more of the primary accent colour into the site. Perhaps use for URL underlines.
 
@@ -30,6 +30,7 @@
 - [ ] Add a project for the race across the world game I built with Claude Code
 - [ ] Have Claude act as a data science tutor to guide me through a cluster analysis on the Seven Bins data, using the work I have already done as a starting point and taking it to a meaningful conclusion.
 - [ ] Generate a true svg file for the logo as the one I have is a bitmap in disguise.
+- [ ] Add social icons (Tableau Public, GitHub and LinkedIn) to my home page
 
 ## Removed (no longer needed)
 - [ ] Build out template instructions for creating new projects (how will the portfolio site link to the place where the project is hosted, e.g. Tableau Public)

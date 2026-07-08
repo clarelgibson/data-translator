@@ -16,6 +16,7 @@
       {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink .) -}}
     {{- end -}}
   {{- end -}}
+  {{- $srcset = $srcset | append (printf "%s %dw" $img.RelPermalink $img.Width) -}}
   {{- $display := $img -}}
   {{- if ge $img.Width 720 -}}{{- $display = $img.Resize "720x Lanczos" -}}{{- end -}}
   <figure class="post-figure">

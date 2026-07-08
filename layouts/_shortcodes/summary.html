@@ -1,0 +1,20 @@
+{{- /* Project summary table, driven by the `project_summary` front matter map.
+       Place the summary shortcode at the top of a project page. */ -}}
+{{- $page := .Page -}}
+{{- with .Page.Params.project_summary -}}
+<table class="project-summary">
+  <tbody>
+    {{- with .goal }}<tr><th scope="row">Goal</th><td>{{ $page.RenderString (dict "display" "inline") . }}</td></tr>{{ end }}
+    {{- with .role }}<tr><th scope="row">Role</th><td>{{ $page.RenderString (dict "display" "inline") . }}</td></tr>{{ end }}
+    {{- with .tools }}<tr><th scope="row">Tools &amp; techniques</th><td>{{ $page.RenderString (dict "display" "inline") . }}</td></tr>{{ end }}
+    {{- with .data }}<tr><th scope="row">Data</th><td>{{ $page.RenderString (dict "display" "inline") . }}</td></tr>{{ end }}
+    {{- with .links }}
+    <tr><th scope="row">Links</th><td>
+      {{- range $i, $l := . }}{{ if $i }} &middot; {{ end }}<a href="{{ $l.url }}">{{ $l.name }}</a>{{ end -}}
+    </td></tr>
+    {{- end }}
+  </tbody>
+</table>
+{{- else -}}
+{{- warnf "summary shortcode: no `project_summary` front matter found on %s" .Page.File.Path -}}
+{{- end -}}

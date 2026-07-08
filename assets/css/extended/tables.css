@@ -3,3 +3,18 @@
 .post-content table:first-of-type thead {
     display: none;
 }
+
+/* Project summary block, rendered by the `summary` shortcode from front matter. */
+.post-content table.project-summary th,
+.post-content table.project-summary td {
+    padding: 6px 10px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid var(--border);
+}
+
+.post-content table.project-summary th {
+    white-space: nowrap;
+    color: var(--primary);
+    font-weight: 600;
+}

@@ -2,20 +2,24 @@
 date: '2025-02-04T22:35:47Z'
 draft: false
 title: 'Cyclistic bike-share: a case study'
+project_summary:
+  goal: 'Recommend how Cyclistic could convert casual riders into annual members'
+  role: 'Sole analyst (Google Data Analytics capstone)'
+  tools: 'R (tidyverse), Tableau Public, data cleaning, exploratory analysis, data visualisation'
+  data: '[2024 Divvy trip data](https://divvy-tripdata.s3.amazonaws.com/index.html) (~5.9M rides)'
+  links:
+    - name: 'Code'
+      url: 'https://github.com/clarelgibson/cyclistic-bike-share'
+    - name: 'Dashboard'
+      url: 'https://public.tableau.com/views/CyclisticBikeShare_17374793232980/CaseStudy?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'
 cover:
-    image: img/cyclistic-banner.jpg
+    image: cyclistic-banner.jpg
     alt: 'Modern stationary bicycles in gym with the Cyclistic logo'
     caption: 'Photo by [Maarten van den Heuvel](https://www.pexels.com/photo/modern-stationary-bicycles-in-gym-4254902/)'
 tags: ['data analysis', 'case study', 'tableau', 'data visualisation', 'data cleansing']
 ---
 
-| Field | Detail |
-|---|---|
-| **Goal** | Recommend how Cyclistic could convert casual riders into annual members |
-| **Role** | Sole analyst (Google Data Analytics capstone) |
-| **Tools & techniques** | R (tidyverse), Tableau Public, data cleaning, exploratory analysis, data visualisation |
-| **Data** | [2024 Divvy trip data](https://divvy-tripdata.s3.amazonaws.com/index.html) (~5.9M rides) |
-| **Links** | [Code](https://github.com/clarelgibson/cyclistic-bike-share) &#183; [Dashboard](https://public.tableau.com/views/CyclisticBikeShare_17374793232980/CaseStudy?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) |
+{{< summary >}}
 
 ## Context
 
@@ -47,12 +51,7 @@ With the data clean, I engineered the fields needed for the analysis (trip durat
 
 The ratio of members to casual riders is roughly 2:1.
 
-{{< figure
-  src="/img/cyclistic-key-facts.png"
-  alt="Donut chart showing total number of trips analysed and split between casual riders and members"
-  caption="Key facts about the analysis"
-  align=center
->}}
+![Donut chart showing total number of trips analysed and split between casual riders and members](cyclistic-key-facts.png "Key facts about the analysis")
 
 I chose to look at trip duration, bike type and seasonality differences between the two groups in order to offer recommendations to Cyclistic.
 
@@ -60,34 +59,19 @@ I chose to look at trip duration, bike type and seasonality differences between 
 
 I found that casual riders take longer trips than members, especially in the summer time. Members have a consistent ride duration throughout the year. One reason for this could be that members are using their trips for a specific, routine purpose (such as commuting), whereas casual riders are riding for pleasure or exercise.
 
-{{< figure
-  src="/img/cyclistic-trip-duration.png"
-  alt="Line chart showing median trip duration by month for casual riders and members"
-  caption="Median trip durations for members and casual riders"
-  align=center
->}}
+![Line chart showing median trip duration by month for casual riders and members](cyclistic-trip-duration.png "Median trip durations for members and casual riders")
 
 ### Bike type
 
 I found that electric bikes are the most popular rideable for both members and casual riders. Electric scooters are more popular with casual riders, though their usage represents just 4% of all casual trips.
 
-{{< figure
-  src="/img/cyclistic-bike-type.png"
-  alt="Column chart showing number of trips by type of rideable for casual riders and members"
-  caption="Trips by ride type for members and casual riders"
-  align=center
->}}
+![Column chart showing number of trips by type of rideable for casual riders and members](cyclistic-bike-type.png "Trips by ride type for members and casual riders")
 
 ### Seasonality
 
 During the summer months, the number of trips made by each group is roughly the same. But in winter, members outnumber casual riders by about 6 to 1. Casual riders tend to ride at weekends and in the evenings, whereas members ride on weekdays with peaks both in the morning and the evening, reflecting a commute pattern.
 
-{{< figure
-  src="/img/cyclistic-seasonality.png"
-  alt="Charts showing number of trips by month, weekday/weekend and time of day for casual riders and members"
-  caption="Seasonality and time of day metrics for members and casual riders"
-  align=center
->}}
+![Charts showing number of trips by month, weekday/weekend and time of day for casual riders and members](cyclistic-seasonality.png "Seasonality and time of day metrics for members and casual riders")
 
 ## Recommendations
 

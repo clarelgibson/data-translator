@@ -1,0 +1,35 @@
+{{/*
+  Image render hook.
+  Turns  ![alt](file.png "caption")  into an optimised, captioned figure.
+    .Text        -> alt text
+    .Destination -> image filename (a page-bundle resource)
+    .Title       -> caption
+  Non-bundle images (e.g. external URLs) fall back to a plain <img>.
+*/}}
+{{- $img := .PageInner.Resources.GetMatch .Destination -}}
+{{- if $img -}}
+  {{- $sizes := slice 480 720 1080 1440 -}}
+  {{- $srcset := slice -}}
+  {{- range $sizes -}}
+    {{- if le . $img.Width -}}
+      {{- $r := $img.Resize (printf "%dx" .) -}}
+      {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink .) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $display := $img -}}
+  {{- if ge $img.Width 720 -}}{{- $display = $img.Resize "720x" -}}{{- end -}}
+  <figure class="post-figure">
+    <img
+      src="{{ $display.RelPermalink }}"
+      {{- with $srcset }}
+      srcset="{{ delimit . ", " }}"
+      sizes="(max-width: 720px) 100vw, 720px"
+      {{- end }}
+      width="{{ $display.Width }}" height="{{ $display.Height }}"
+      alt="{{ .Text }}" loading="lazy" decoding="async">
+    {{- with .Title }}<figcaption>{{ . }}</figcaption>{{ end }}
+  </figure>
+{{- else -}}
+  <img src="{{ .Destination }}" alt="{{ .Text }}"
+    {{- with .Title }} title="{{ . }}"{{ end }} loading="lazy">
+{{- end -}}

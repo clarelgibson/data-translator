@@ -2,20 +2,24 @@
 date: '2023-11-03T21:40:24Z'
 draft: false
 title: 'The seven bins of St Helens'
+project_summary:
+  goal: 'Test whether kerbside sort recycling systems achieve higher household recycling rates than co-mingled systems across English local authorities'
+  role: 'Solo project: data sourcing (including a Freedom of Information request), ETL, analysis and visualisation'
+  tools: 'R (data wrangling), Tableau Public, Google Forms survey, FOI request'
+  data: '309 English local authorities. Defra recycling rates (2021/22), recycling-system type (FOI), plus ONS local authority codes, boundary shapefile and mid-2021 population estimates'
+  links:
+    - name: 'Code'
+      url: 'https://github.com/clarelgibson/uk-recycling'
+    - name: 'Dashboard'
+      url: 'https://public.tableau.com/views/BinBurdens/BinBurdens'
 cover:
-    image: img/recycling.jpg
+    image: recycling.jpg
     alt: 'A group of household recyclable materials on a kitchen counter'
     caption: 'Photo by [SHVETS production](https://www.pexels.com/photo/woman-selecting-glass-into-plastic-container-7512859/)'
 tags: ['tableau', 'case-study', 'recycling']
 ---
 
-| Field | Detail |
-|---|---|
-| **Goal** | Test whether kerbside sort recycling systems achieve higher household recycling rates than co-mingled systems across English local authorities. |
-| **Role** | Solo project: data sourcing (including a Freedom of Information request), ETL, analysis and visualisation. |
-| **Tools & techniques** | R (data wrangling), Tableau Public, Google Forms survey, FOI request. |
-| **Data** | 309 English local authorities. Defra recycling rates (2021/22), recycling-system type (FOI), plus ONS local authority codes, boundary shapefile and mid-2021 population estimates. |
-| **Links** | [Code](https://github.com/clarelgibson/uk-recycling) &#183; [Dashboard](https://public.tableau.com/views/BinBurdens/BinBurdens) |
+{{< summary >}}
 
 ## Context
 
@@ -47,12 +51,7 @@ To build the analysis dataset, I joined the FOI data on recycling system and the
 
 My final dataset comprised recycling data from 309 local authorities in England. Of these, 157 used a co-mingled system, 112 used a two-stream system and 40 used a multi-stream system.
 
-{{< figure
-  src="/img/data-overview.png"
-  alt="Bar chart showing that 157 local authorities use the co-mingled system, 112 use a two-stream system and 40 use a multi-stream system"
-  caption="Data overview"
-  align=center
->}}
+![Bar chart showing that 157 local authorities use the co-mingled system, 112 use a two-stream system and 40 use a multi-stream system](data-overview.png "Data overview")
 
 ## Findings
 
@@ -60,12 +59,7 @@ Local authorities employing a co-mingled system achieved a median recycling rate
 
 Looking specifically at Waverley and St Helens, we see that Waverley was one of the top performers among co-minglers and St Helens was one of the bottom performers among multi-streamers.
 
-{{< figure
-  src="/img/key-findings.png"
-  alt="Box plots showing the distribution of recycling rates for each local authority, grouped by the type of system that they use"
-  caption="Key findings"
-  align=center
->}}
+![Box plots showing the distribution of recycling rates for each local authority, grouped by the type of system that they use](key-findings.png "Key findings")
 
 ## Conclusion
 

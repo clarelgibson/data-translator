@@ -9,10 +9,13 @@
 - [X] Write documentation for GitHub (README) - ensure that I have a guide to adding new content in the future
 - [X] Add a photo to the profile page
 - [X] Tighten up structure, consistency and content of each project write-up. Ask Claude to give a critical review in the role of a potential employer.
+- [X] Rewrite front matter and figure shortcodes to allow for image optimization
+- [X] Migrate the hand-written summary block for Project write-ups to front matter and using Hugo archtype
 
 ## Now
-- [ ] Rewrite front matter and figure shortcodes to allow for image optimization
-- [ ] Migrate the hand-written summary block for Project write-ups to front matter and using Hugo archtype
+- [ ] Repeat steps to convert Seven Bins to the new scaffold
+- [ ] Repeat steps to convert Tesla to the new scaffold - we need to amend the render hook first to work with the .svg file.
+- [ ] Update the README to give instructions on how to create a new project now that I have changed the process. Be sure to include a reference to the command needed to create a new project: `hugo new content projects/<name>`
 
 ## Next (agreed sequence)
 - [ ] Change body font from Poppins to Work Sans
@@ -26,7 +29,6 @@
 - [ ] Optional: simple one-page CV PDF for passers-by, linked in nav/footer - similar to the one on [this site](https://perryw-2023.webflow.io)
 - [ ] Add a project for the race across the world game I built with Claude Code
 - [ ] Have Claude act as a data science tutor to guide me through a cluster analysis on the Seven Bins data, using the work I have already done as a starting point and taking it to a meaningful conclusion.
-- [ ] Update the README to give instructions on how to create a new project now that I have changed the process. Be sure to include a reference to the command needed to create a new project: `hugo new content projects/<name>`
 
 ## Removed (no longer needed)
 - [ ] Build out template instructions for creating new projects (how will the portfolio site link to the place where the project is hosted, e.g. Tableau Public)

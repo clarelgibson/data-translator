@@ -26,13 +26,14 @@
     --code-bg: #202C39;
 }
 
-/* Links: calm at rest, coral on hover */
-.post-content a {
-    color: var(--content);                 /* body navy in light, soft grey in dark */
-    box-shadow: 0 1px 0 var(--secondary);  /* subtle teal underline marks the link */
+/* Links: coral underline at rest, full coral on hover */
+.post-content a:not(.anchor) {
+    color: var(--content);
+    text-decoration: none;            /* switch off the theme's navy/grey underline */
+    box-shadow: 0 1px 0 #FF4F5C;    /* leaving only the coral line */
 }
 .post-content a:hover {
-    color: #FF4F5C;                        /* coral appears only on hover */
+    color: #FF4F5C;
     box-shadow: 0 1px 0 #FF4F5C;
 }
 

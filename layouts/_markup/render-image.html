@@ -4,10 +4,18 @@
     .Text        -> alt text
     .Destination -> image filename (a page-bundle resource)
     .Title       -> caption
+  SVGs are resolution-independent, so they skip the resize/srcset
+  pipeline and render as a plain figure.
   Non-bundle images (e.g. external URLs) fall back to a plain <img>.
 */}}
 {{- $img := .PageInner.Resources.GetMatch .Destination -}}
 {{- if $img -}}
+  {{- if eq $img.MediaType.SubType "svg" -}}
+  <figure class="post-figure">
+    <img src="{{ $img.RelPermalink }}" alt="{{ .Text }}" loading="lazy" decoding="async">
+    {{- with .Title }}<figcaption>{{ . }}</figcaption>{{ end }}
+  </figure>
+  {{- else -}}
   {{- $sizes := slice 480 720 1080 1440 -}}
   {{- $srcset := slice -}}
   {{- range $sizes -}}
@@ -30,6 +38,7 @@
       alt="{{ .Text }}" loading="lazy" decoding="async">
     {{- with .Title }}<figcaption>{{ . }}</figcaption>{{ end }}
   </figure>
+  {{- end -}}
 {{- else -}}
   <img src="{{ .Destination }}" alt="{{ .Text }}"
     {{- with .Title }} title="{{ . }}"{{ end }} loading="lazy">

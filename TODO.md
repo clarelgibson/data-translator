@@ -11,10 +11,10 @@
 - [X] Tighten up structure, consistency and content of each project write-up. Ask Claude to give a critical review in the role of a potential employer.
 - [X] Rewrite front matter and figure shortcodes to allow for image optimization
 - [X] Migrate the hand-written summary block for Project write-ups to front matter and using Hugo archtype
+- [X] Repeat steps to convert Seven Bins to the new scaffold
+- [X] Repeat steps to convert Tesla to the new scaffold - we need to amend the render hook first to work with the .svg file.
 
 ## Now
-- [ ] Repeat steps to convert Seven Bins to the new scaffold
-- [ ] Repeat steps to convert Tesla to the new scaffold - we need to amend the render hook first to work with the .svg file.
 - [ ] Update the README to give instructions on how to create a new project now that I have changed the process. Be sure to include a reference to the command needed to create a new project: `hugo new content projects/<name>`
 
 ## Next (agreed sequence)

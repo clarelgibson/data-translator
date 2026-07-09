@@ -3,7 +3,7 @@ date: '2023-11-03T21:40:24Z'
 draft: false
 title: 'The seven bins of St Helens'
 project_summary:
-  goal: 'Test whether kerbside sort recycling systems achieve higher household recycling rates than co-mingled systems across English local authorities'
+  goal: 'Test whether multi-stream systems achieve higher recycling rates than co-mingled systems'
   role: 'Solo project: data sourcing (including a Freedom of Information request), ETL, analysis and visualisation'
   tools: 'R (data wrangling), Tableau Public, Google Forms survey, FOI request'
   data: '309 English local authorities. Defra recycling rates (2021/22), recycling-system type (FOI), plus ONS local authority codes, boundary shapefile and mid-2021 population estimates'

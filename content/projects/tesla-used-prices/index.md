@@ -7,7 +7,7 @@ cover:
     alt: 'Photo of a white Tesla Model 3 on the road'
     caption: 'Photo by [David Gari](https://www.pexels.com/photo/white-tesla-model-3-car-on-road-9300916/)'
 project_summary:
-  goal: 'Build a dashboard to track used Model 3 inventory and shortlist candidates, to inform my own EV purchase'
+  goal: 'Build a dashboard to track and shortlist used Model 3 inventory, to inform my own EV purchase'
   role: 'End-to-end analytics engineer'
   tools: 'R, Google Sheets, GitHub Actions, Tableau Public; API extraction, scheduled refresh, dashboard build'
   data: 'Tesla inventory API, the feed behind [tesla.com](https://www.tesla.com/en_GB/inventory/used/m3?arrangeby=plh&range=0) used inventory'

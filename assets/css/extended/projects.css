@@ -22,3 +22,8 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* Give the goal text extra lines on the cards (theme default is 2). */
+.projects-grid .entry-content {
+    -webkit-line-clamp: 4;
+}

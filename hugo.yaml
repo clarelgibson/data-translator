@@ -18,6 +18,7 @@ params:
   title: "Data Translator"
   description: "Data analytics portfolio of Clare Gibson"
   author: "Clare Gibson"
+  hideAuthor: true
   defaultTheme: auto
   ShowShareButtons: false
   ShowReadingTime: true

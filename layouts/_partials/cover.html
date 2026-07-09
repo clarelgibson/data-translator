@@ -1,17 +1,67 @@
-{{- $sizes := slice 360 480 720 1080 1500 }}
+{{- with .cxt}} {{/* Apply proper context from dict */}}
+{{- if (and .Params.cover.image (not $.isHidden)) }}
+<figure class="entry-cover">
+    {{- $loading := cond $.IsSingle "eager" "lazy" }}
+    {{- $addLink := (and site.Params.cover.linkFullImages $.IsSingle) }}
+    {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) }}
+    {{- $alt := (.Params.cover.alt | default .Params.cover.caption | plainify) }}
+    {{- $responsiveImages := (.Params.cover.responsiveImages | default site.Params.cover.responsiveImages) | default true }}
 
-{{- $srcset := slice }}
-{{- range $w := $sizes }}
-  {{- if ge $cover.Width $w }}
-    {{- $h := div $w 2 }}
-    {{- $img := $cover.Fill (printf "%dx%d Smart Lanczos" $w $h) }}
-    {{- $srcset = $srcset | append (printf "%s %dw" $img.Permalink $w) }}
-  {{- end }}
-{{- end }}
-{{- $base := $cover.Fill "720x360 Smart Lanczos" }}
-<img loading="{{ $loading }}"
-     srcset="{{ delimit $srcset ", " }}"
-     src="{{ $base.Permalink }}"
-     sizes="(min-width: 768px) 720px, 100vw"
-     width="{{ $base.Width }}" height="{{ $base.Height }}"
-     alt="{{ $alt }}">
+    {{- $pageBundleCover := (.Resources.ByType "image").GetMatch (printf "*%s*" (.Params.cover.image)) }}
+    {{- $globalResourcesCover := (resources.ByType "image").GetMatch (printf "*%s*" (.Params.cover.image)) }}
+    {{- $cover := (or $pageBundleCover $globalResourcesCover) }}
+
+    {{- $sizes := slice 360 480 720 1080 1500 }}
+    {{- $processableFormats := (slice "jpg" "jpeg" "png" "tif" "bmp" "gif") -}}
+    {{- if hugo.IsExtended -}}
+        {{- $processableFormats = $processableFormats | append "webp" -}}
+    {{- end -}}
+
+    {{- $imgdl := (.Params.cover.image) | absURL }}
+    {{- if $cover -}}
+        {{- $imgdl = $cover.Permalink }}
+    {{- end -}}
+
+    {{- if $addLink }}
+        <a href="{{ $imgdl }}" target="_blank" rel="noopener noreferrer">
+    {{- end }}
+
+    {{- if $cover -}}
+        {{/* i.e it is present in page bundle */}}
+        {{- if (and (in $processableFormats $cover.MediaType.SubType) ($responsiveImages) (eq $prod true)) }}
+            {{- $srcset := slice }}
+            {{- range $w := $sizes }}
+                {{- if ge $cover.Width $w }}
+                    {{- $h := div $w 2 }}
+                    {{- $img := $cover.Fill (printf "%dx%d Smart Lanczos" $w $h) }}
+                    {{- $srcset = $srcset | append (printf "%s %dw" $img.Permalink $w) }}
+                {{- end }}
+            {{- end }}
+            {{- $base := $cover.Fill "720x360 Smart Lanczos" }}
+            <img loading="{{ $loading }}"
+                srcset="{{ delimit $srcset ", " }}"
+                src="{{ $base.Permalink }}"
+                sizes="(min-width: 768px) 720px, 100vw"
+                width="{{ $base.Width }}" height="{{ $base.Height }}"
+                alt="{{ $alt }}">
+        {{- else }}{{/* Unprocessable image or responsive images disabled */}}
+            <img loading="{{ $loading }}" src="{{ $imgdl }}" alt="{{ $alt }}">
+        {{- end }}
+    {{- else }}
+        {{- /* For absolute urls and external links, no img processing here */}}
+        <img loading="{{ $loading }}" src="{{ $imgdl }}" alt="{{ $alt }}">
+    {{- end }}
+
+    {{- if $addLink }}
+        </a>
+    {{- end -}}
+
+    {{- /*  Display Caption  */}}
+    {{- if $.IsSingle }}
+        {{ with .Params.cover.caption -}}
+            <figcaption>{{ . | markdownify }}</figcaption>
+        {{- end }}
+    {{- end }}
+</figure>
+{{- end }}{{/* End image */}}
+{{- end -}}{{/* End context */ -}}

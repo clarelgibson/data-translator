@@ -27,3 +27,26 @@
 .projects-grid .entry-content {
     -webkit-line-clamp: 4;
 }
+
+/* Defined card surface: white in light mode, lighter navy in dark, with a
+   soft shadow. Overrides the theme's flat .post-entry on the projects grid. */
+.projects-grid .post-entry {
+    background: var(--card-bg);
+    border-color: transparent;
+    box-shadow: var(--card-shadow);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+.projects-grid .post-entry:hover,
+.projects-grid .post-entry:focus-within {
+    border-color: transparent;
+    box-shadow: var(--card-shadow-hover);
+}
+
+/* Title turns coral on hover, echoing the site's link accent. */
+.projects-grid .entry-header h2 {
+    transition: color .2s ease;
+}
+.projects-grid .post-entry:hover .entry-header h2,
+.projects-grid .post-entry:focus-within .entry-header h2 {
+    color: var(--accent);
+}

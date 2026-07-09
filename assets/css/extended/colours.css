@@ -18,7 +18,7 @@
     --card-shadow-hover: 0 4px 10px rgba(32, 44, 57, .10), 0 12px 28px rgba(32, 44, 57, .10);
 }
 
-.dark {
+:root[data-theme="dark"] {
     /* Dark mode */
     --theme: #202C39;
     --entry: #202C39;

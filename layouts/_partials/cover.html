@@ -1,0 +1,17 @@
+{{- $sizes := slice 360 480 720 1080 1500 }}
+
+{{- $srcset := slice }}
+{{- range $w := $sizes }}
+  {{- if ge $cover.Width $w }}
+    {{- $h := div $w 2 }}
+    {{- $img := $cover.Fill (printf "%dx%d Smart Lanczos" $w $h) }}
+    {{- $srcset = $srcset | append (printf "%s %dw" $img.Permalink $w) }}
+  {{- end }}
+{{- end }}
+{{- $base := $cover.Fill "720x360 Smart Lanczos" }}
+<img loading="{{ $loading }}"
+     srcset="{{ delimit $srcset ", " }}"
+     src="{{ $base.Permalink }}"
+     sizes="(min-width: 768px) 720px, 100vw"
+     width="{{ $base.Width }}" height="{{ $base.Height }}"
+     alt="{{ $alt }}">

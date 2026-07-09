@@ -13,7 +13,7 @@ project_summary:
     - name: 'Dashboard'
       url: 'https://public.tableau.com/views/CyclisticBikeShare_17374793232980/CaseStudy?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'
 cover:
-    image: cyclistic-banner.jpg
+    image: cyclistic-cover.jpg
     alt: 'Modern stationary bicycles in gym with the Cyclistic logo'
     caption: 'Photo by [Maarten van den Heuvel](https://www.pexels.com/photo/modern-stationary-bicycles-in-gym-4254902/)'
 tags: ['data analysis', 'case study', 'tableau', 'data visualisation', 'data cleansing']

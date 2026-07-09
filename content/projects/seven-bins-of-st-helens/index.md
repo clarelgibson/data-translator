@@ -13,7 +13,7 @@ project_summary:
     - name: 'Dashboard'
       url: 'https://public.tableau.com/views/BinBurdens/BinBurdens'
 cover:
-    image: recycling.jpg
+    image: recycling-cover.jpg
     alt: 'A group of household recyclable materials on a kitchen counter'
     caption: 'Photo by [SHVETS production](https://www.pexels.com/photo/woman-selecting-glass-into-plastic-container-7512859/)'
 tags: ['tableau', 'case-study', 'recycling']

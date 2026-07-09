@@ -32,7 +32,7 @@
 ## Next (agreed sequence)
 - [ ] Generate a true svg file for the logo as the one I have is a bitmap in disguise.
 - [ ] Add social icons (Tableau Public, GitHub and LinkedIn) to my home page
-- [ ] Restructure the experience section of my About page to be tabular - like the [Perry site](https://perryw-2023.webflow.io)
+- [ ] Restructure the experience section of my About page to be tabular - like the [Perry site](https://perryw-2023.webflow.io/info)
 
 ## Someday / ideas
 - [ ] Add school-admissions and COVID-19 projects (mentioned in CV)

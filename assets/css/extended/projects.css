@@ -1,0 +1,24 @@
+/* assets/css/extended/projects.css
+   Projects landing page: horizontal card grid.
+   Scoped via .projects-grid, which layouts/list.html applies only on the
+   projects section. */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    margin-top: var(--gap);
+}
+
+/* The theme spaces stacked posts with margin-bottom; inside the grid the
+   gap controls spacing, so switch that off to avoid a doubled gap. */
+.projects-grid .post-entry {
+    margin-bottom: 0;
+}
+
+/* Phones: one card per row. */
+@media (max-width: 40rem) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}

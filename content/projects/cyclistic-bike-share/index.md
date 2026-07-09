@@ -1,7 +1,7 @@
 ---
 date: '2025-02-04T22:35:47Z'
 draft: false
-title: 'Cyclistic bike-share: a case study'
+title: 'Cyclistic bike-share'
 project_summary:
   goal: 'Recommend how Cyclistic could convert casual riders into annual members'
   role: 'Sole analyst (Google Data Analytics capstone)'

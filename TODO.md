@@ -1,7 +1,6 @@
 # Data Translator — task backlog
 
 ## Now
-- [ ] Generate a true svg file for the logo as the one I have is a bitmap in disguise.
 - [ ] Add social icons (Tableau Public, GitHub and LinkedIn) to my home page
 - [ ] Restructure the experience section of my About page to be tabular - like the [Perry site](https://perryw-2023.webflow.io/info)
 
@@ -39,6 +38,7 @@
      Fill, so covers crop automatically and no longer need manual cropping.
   3. Redesign list.html for a horizontal multi-card layout, building on
      the project_summary.goal field already feeding the cards.
+- [X] Generate a true svg file for the logo as the one I have is a bitmap in disguise.
 
 ## Removed (no longer needed)
 - [ ] Build out template instructions for creating new projects (how will the portfolio site link to the place where the project is hosted, e.g. Tableau Public)

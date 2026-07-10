@@ -11,6 +11,7 @@
 - [ ] Add school-admissions and COVID-19 projects (mentioned in CV)
 - [ ] Optional: simple one-page CV PDF for passers-by, linked in nav/footer - similar to the one on [this site](https://perryw-2023.webflow.io)
 - [ ] Add a project for the race across the world game I built with Claude Code
+- [ ] Regenerate favicons (favicon.ico, favicon-16x16.png, favicon-32x32.png, apple-touch-icon.png in hugo.yaml lines 45 to 48) from the proper vector master to give crisper small icons, and add an SVG favicon for modern browsers.
 
 ## Done
 - [X] Step 1: content (About done; Projects landing + 3 case studies remaining)

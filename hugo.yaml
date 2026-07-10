@@ -40,6 +40,18 @@ params:
         url: about
       - name: Projects
         url: projects
+    
+  socialIcons:
+    - name: tableau
+      url: "https://public.tableau.com/app/profile/datatranslator/vizzes"
+    - name: github
+      url: "https://github.com/clarelgibson"
+    - name: kaggle
+      url: "https://www.kaggle.com/doublew"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/clarelgibson"
+    - name: email
+      url: "mailto:clare@datatranslator.co.uk"
 
   assets:
     favicon: "favicon.ico"

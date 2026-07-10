@@ -49,7 +49,7 @@ params:
 
   label:
     text: "Data Translator"
-    icon: "/img/dt-logo.png"
+    icon: "/img/dt-logo.svg"
     iconHeight: 32
 
 menu:

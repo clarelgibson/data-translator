@@ -1,0 +1,19 @@
+{{- /* Career Highlights: tabular, company-led experience list driven by the
+       `experience` front matter list on the About page. */ -}}
+{{- $page := .Page -}}
+{{- with .Page.Params.experience -}}
+<div class="career-highlights">
+  {{- range . }}
+  <div class="ch-entry">
+    <div class="ch-company">{{ .company }}</div>
+    <div class="ch-line">
+      <span class="ch-role">{{ .role }}</span>
+      {{- with .dates }}<span class="ch-dates">{{ . }}</span>{{ end }}
+    </div>
+    {{- with .description }}<div class="ch-desc">{{ $page.RenderString (dict "display" "inline") . }}</div>{{ end }}
+  </div>
+  {{- end }}
+</div>
+{{- else -}}
+{{- warnf "experience shortcode: no `experience` front matter found on %s" .Page.File.Path -}}
+{{- end -}}

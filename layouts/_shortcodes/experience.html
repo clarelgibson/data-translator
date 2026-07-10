@@ -1,16 +1,17 @@
-{{- /* Career Highlights: tabular, company-led experience list driven by the
-       `experience` front matter list on the About page. */ -}}
+{{- /* Career Highlights: two-column, company-led experience list driven by
+       the `experience` front matter list on the About page.
+       Left column: company. Right column: role, dates, description. */ -}}
 {{- $page := .Page -}}
 {{- with .Page.Params.experience -}}
 <div class="career-highlights">
   {{- range . }}
   <div class="ch-entry">
     <div class="ch-company">{{ .company }}</div>
-    <div class="ch-line">
-      <span class="ch-role">{{ .role }}</span>
-      {{- with .dates }}<span class="ch-dates">{{ . }}</span>{{ end }}
+    <div class="ch-detail">
+      <div class="ch-role">{{ .role }}</div>
+      {{- with .dates }}<div class="ch-dates">{{ . }}</div>{{ end }}
+      {{- with .description }}<div class="ch-desc">{{ $page.RenderString (dict "display" "inline") . }}</div>{{ end }}
     </div>
-    {{- with .description }}<div class="ch-desc">{{ $page.RenderString (dict "display" "inline") . }}</div>{{ end }}
   </div>
   {{- end }}
 </div>

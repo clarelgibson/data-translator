@@ -1,59 +1,48 @@
 /* assets/css/extended/experience.css
-   Career Highlights: company-led tabular list on the About page.
-   Driven by the `experience` front matter via the experience shortcode. */
+   Career Highlights: two-column, company-led list on the About page.
+   Left column: company (large). Right column: role, dates, description.
+   No borders, for a clean tabular look. */
 
 .career-highlights {
     margin-top: var(--gap);
 }
 
-/* Each role sits between hairline rules for a ledger-like feel. */
+/* Two columns: company left, details right. */
 .ch-entry {
-    padding: 1.2rem 0;
-    border-top: 1px solid var(--border);
-}
-.ch-entry:last-child {
-    border-bottom: 1px solid var(--border);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2.5rem;
+    padding: 1.4rem 0;
 }
 
 /* Company: the lead element, large, in the heading font. */
 .ch-company {
     font-family: 'Roboto Mono', monospace;
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 1.2;
     color: var(--primary);
 }
 
-/* Role and dates share a row: role on the left, dates aligned right. */
-.ch-line {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 1rem;
-    margin-top: .2rem;
-}
+/* Right column: role, then dates, then description. */
 .ch-role {
-    flex: 1 1 auto;
     font-weight: 600;
     color: var(--content);
 }
 .ch-dates {
-    flex: 0 0 auto;
+    margin-top: .1rem;
     color: var(--secondary);
-    white-space: nowrap;
     font-size: .95rem;
 }
-
-/* Description below, full width. */
 .ch-desc {
-    margin-top: .4rem;
+    margin-top: .5rem;
     color: var(--content);
 }
 
-/* Phones: role and dates stack rather than sharing a line. */
+/* Phones: company stacks above its details. */
 @media (max-width: 40rem) {
-    .ch-line {
-        flex-direction: column;
-        gap: .1rem;
+    .ch-entry {
+        grid-template-columns: 1fr;
+        row-gap: .4rem;
     }
 }

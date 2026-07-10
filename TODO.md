@@ -7,7 +7,11 @@
 - [ ] Regenerate favicons (favicon.ico, favicon-16x16.png, favicon-32x32.png, apple-touch-icon.png in hugo.yaml lines 45 to 48) from the proper vector master to give crisper small icons, and add an SVG favicon for modern browsers.
 
 ## Later
-- [ ] Add school-admissions and COVID-19 projects (mentioned in CV)
+- [ ] Build case study for england-school-admissions (Tableau dashboard + R pipeline; mentioned in CV). Check external links and update branding from surreydatagirl to Data Translator.
+- [ ] Build case study for uk-food (FSA hygiene data, R analysis, geospatial visualisation). Update branding references to Data Translator.
+- [ ] Build case study for tableau-public-autorefresh (R + Google Sheets + GitHub Actions + Tableau pipeline; demonstrates data engineering). Slightly different spine structure needed (heavier on method/build, lighter on findings).
+- [ ] Audit COVID-19 project and check completeness before deciding if it's portfolio-ready.
+- [ ] Build makeover-monday gallery or lighter project entry (collection of Tableau Public viz makeovers; for breadth of visualisation skill).
 - [ ] Add a project for the race across the world game I built with Claude Code
 
 ## Done

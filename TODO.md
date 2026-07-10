@@ -1,16 +1,14 @@
 # Data Translator — task backlog
 
 ## Now
-- [ ] Restructure the experience section of my About page to be tabular - like the [Perry site](https://perryw-2023.webflow.io/info)
+- [ ] Have Claude act as a data science tutor to guide me through a cluster analysis on the Seven Bins data, using the work I have already done as a starting point and taking it to a meaningful conclusion.
 
 ## Next
-- [ ] Have Claude act as a data science tutor to guide me through a cluster analysis on the Seven Bins data, using the work I have already done as a starting point and taking it to a meaningful conclusion.
+- [ ] Regenerate favicons (favicon.ico, favicon-16x16.png, favicon-32x32.png, apple-touch-icon.png in hugo.yaml lines 45 to 48) from the proper vector master to give crisper small icons, and add an SVG favicon for modern browsers.
 
 ## Later
 - [ ] Add school-admissions and COVID-19 projects (mentioned in CV)
-- [ ] Optional: simple one-page CV PDF for passers-by, linked in nav/footer - similar to the one on [this site](https://perryw-2023.webflow.io)
 - [ ] Add a project for the race across the world game I built with Claude Code
-- [ ] Regenerate favicons (favicon.ico, favicon-16x16.png, favicon-32x32.png, apple-touch-icon.png in hugo.yaml lines 45 to 48) from the proper vector master to give crisper small icons, and add an SVG favicon for modern browsers.
 
 ## Done
 - [X] Step 1: content (About done; Projects landing + 3 case studies remaining)
@@ -40,8 +38,10 @@
      the project_summary.goal field already feeding the cards.
 - [X] Generate a true svg file for the logo as the one I have is a bitmap in disguise.
 - [X] Add social icons (Tableau Public, GitHub, Kaggle, LinkedIn and email) to my home page
+- [X] Restructure the experience section of my About page to be tabular - like the [Perry site](https://perryw-2023.webflow.io/info)
 
 ## Removed (no longer needed)
 - [ ] Build out template instructions for creating new projects (how will the portfolio site link to the place where the project is hosted, e.g. Tableau Public)
 - [ ] Investigate dynamic image sizing for project posts. Currently I manually crop each image before uploading it to `static/img` but maybe there is a way to get Hugo to do the resizing for me?
 - [ ] Adjust the project summary text for each project on the project landing page so that it displays just the content inside Goal/Detail from the initial table. I don't want to display the column headings in this preview text.
+- [ ] Optional: simple one-page CV PDF for passers-by, linked in nav/footer - similar to the one on [this site](https://perryw-2023.webflow.io)

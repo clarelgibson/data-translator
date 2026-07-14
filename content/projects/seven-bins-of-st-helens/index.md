@@ -1,11 +1,11 @@
 ---
-date: today
+date: '2026-07-15'
 draft: false
 title: 'The seven bins of St Helens'
 project_summary:
   goal: 'Determine whether the recycling collection system has a meaningful impact on recycling rates across English local authorities'
   role: 'Solo project: data sourcing (including a Freedom of Information request), ETL, analysis and visualisation'
-  tools: 'R (data wrangling), Tableau Public, Google Forms survey, FOI request'
+  tools: 'R (data wrangling and statistical analysis), Tableau Public, Google Forms survey, FOI request'
   data: '309 English local authorities. Defra recycling rates (2021/22), recycling-system type (FOI), plus ONS local authority codes, boundary shapefile and mid-2021 population estimates'
   links:
     - name: 'Analysis'

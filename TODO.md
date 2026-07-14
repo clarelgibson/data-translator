@@ -26,6 +26,8 @@
 - [ ] Audit COVID-19 project and check completeness before deciding if it's portfolio-ready.
 - [ ] Build makeover-monday gallery or lighter project entry (collection of Tableau Public viz makeovers; for breadth of visualisation skill).
 - [ ] Add a project for the race across the world game I built with Claude Code
+- [ ] Use `_brand.yml` to declare logo, colour palette and typography to all future Quarto docs and push the palette into `ggplot`
+- [ ] Make a template github repo for data analysis projects, including license, appropriate .gitignore, quarto template with dt branding and directory structure (CSS files included if needed) 
 
 ## Done
 - [X] Step 1: content (About done; Projects landing + 3 case studies remaining)

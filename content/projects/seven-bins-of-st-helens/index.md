@@ -1,5 +1,5 @@
 ---
-date: '2026-07-15'
+date: '2026-07-14'
 draft: false
 title: 'The seven bins of St Helens'
 project_summary:

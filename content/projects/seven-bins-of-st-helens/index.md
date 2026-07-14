@@ -1,17 +1,17 @@
 ---
-date: '2023-11-03T21:40:24Z'
+date: today
 draft: false
 title: 'The seven bins of St Helens'
 project_summary:
-  goal: 'Test whether collection system has a meaningful impact on recycling rate'
+  goal: 'Determine whether the recycling collection system has a meaningful impact on recycling rates across English local authorities'
   role: 'Solo project: data sourcing (including a Freedom of Information request), ETL, analysis and visualisation'
   tools: 'R (data wrangling), Tableau Public, Google Forms survey, FOI request'
   data: '309 English local authorities. Defra recycling rates (2021/22), recycling-system type (FOI), plus ONS local authority codes, boundary shapefile and mid-2021 population estimates'
   links:
-    - name: 'Code'
-      url: 'https://github.com/clarelgibson/uk-recycling'
     - name: 'Analysis'
       url: 'https://clarelgibson.github.io/uk-recycling/'
+    - name: 'Code'
+      url: 'https://github.com/clarelgibson/uk-recycling'
     - name: 'Dashboard'
       url: 'https://public.tableau.com/views/BinBurdens/BinBurdens'
 cover:
@@ -57,22 +57,26 @@ My final dataset comprised recycling data from 309 local authorities in England.
 
 ## Findings
 
-Local authorities employing a co-mingled system achieved a median recycling rate of 40.3%, while those employing two-stream or multi-stream systems achieved higher rates of 44.3% and 44.5% respectively. This indicates a difference in recycling rates in favour of one of the kerbside sort systems. It is interesting to note that the local authority with the highest recycling rate in 2021 was Three Rivers (63.5%), which used a co-mingled system. The lowest performer overall was Barrow-in-Furness (17.7%), which used a two-stream system.
-
-Looking specifically at Waverley and St Helens, we observed that Waverley was one of the top performers among co-minglers and St Helens was one of the bottom performers among multi-streamers.
+Local authorities using a co-mingled system achieved a median recycling rate of 40.3%, compared with 44.3% for two-stream and 44.5% for multi-stream. A Kruskal-Wallis test confirmed that this difference is unlikely to be down to chance (*p* = 0.007), and it survives when controlling for the size of the authority. But the effect is modest: collection system explains less than 3% of the variation in recycling rates between authorities.
 
 ![Box plots showing the distribution of recycling rates for each local authority, grouped by the type of system that they use](key-findings.png "Key findings")
 
-Through statistical testing, we discovered that there was a real difference in recycling rates across the different collection systems, but the effect was small. Just 5% of the variation in recycling rates is explained by collection system.
+The pattern is not a simple ladder. Two-stream and multi-stream authorities are statistically indistinguishable from one another, differing by just 0.2 percentage points. What appears to matter is whether households separate their recycling at all, not how finely they separate it. The jump from one bin to two captures the effect; the jump from two to seven adds nothing detectable.
+
+It is interesting that the highest recycling rate in 2021 belonged to Three Rivers (63.5%), a co-mingled authority, while the lowest was Barrow-in-Furness (17.7%), which separates into two streams. Whatever drives recycling performance, the choice of bin system is only a small part of it.
 
 ## Conclusion
 
-The higher recycling rates in kerbside sort systems could be attributed to better sorting at source, leading to cleaner recyclables. Additionally, community awareness and engagement may play a role. However, as the data shows, local authorities using a co-mingled system can and do achieve high recycling rates, with less burden on the householder.
+So, does the collection system have a meaningful impact on recycling rate? The honest answer is: a little, but less than you might expect.
 
-In conclusion, my analysis suggests that local authorities with kerbside sort systems tend to achieve higher recycling rates than those with co-mingled systems. However, where employed well, co-mingled systems do have the potential to achieve high recycling rates.
+There is a real difference, and it is not trivial in size. Authorities that ask householders to separate their recycling are associated with higher rates than those that collect everything co-mingled, by around 4 percentage points at the median. Applied nationally, a shift of that size would be a meaningful policy outcome.
+
+But the burden of separation appears to pay off only at the first step. Asking householders to sort into ever more streams, as St Helens now does with its seven containers, is not associated with any further gain over a simpler two-stream system. And most of what separates a high-recycling authority from a low-recycling one, some 95%, lies outside the collection system altogether.
+
+There are also good reasons a council might choose a system regardless of its effect on rates. Without access to a Materials Recovery Facility to sort co-mingled waste, kerbside separation may be the only practical option. The choice is shaped by infrastructure, cost and geography, not made freely on the basis of expected recycling rate.
 
 ## Limitations and next steps
 
-It is important to note that my research focussed only on data from a single financial year and is only applicable to local authorities in England. Furthermore, the analysis does not account for differences in the materials collected for recycling in different local authorities. For example, some local authorities provide a separate collection for food waste, meaning that food waste contributes to the overall recycling rate. Others advise that food waste should be co-mingled with other non-recyclable household waste, meaning that food waste does not contribute to the recycling rate. Some authorities do not offer any kerbside collection of glass, instead asking householders to take their glass to a bottle bank. If householders do not have the means to access a bottle bank, they may choose to dispose of their glass waste with the general household waste. Since my analysis relies on available data, variations in local policies or population density might influence the results.
+This analysis covers a single financial year and English local authorities only. More importantly, it controls only for the size of each authority. The factors most likely to influence recycling rates, such as deprivation, how rural or urban an area is, and its housing stock (flats recycle far less well than houses, whatever bins they are given), were not available in the dataset. Furthermore, the analysis does not account for differences in the materials collected for recycling in different local authorities. For example, some local authorities provide a separate collection for food waste, meaning that food waste contributes to the overall recycling rate. Others advise that food waste should be co-mingled with other non-recyclable household waste, meaning that food waste does not contribute to the recycling rate. Some authorities do not offer any kerbside collection of glass, instead asking householders to take their glass to a bottle bank. If householders do not have the means to access a bottle bank, they may choose to dispose of their glass waste with the general household waste. The differences reported here should therefore be read as associations, not causes.
 
-Further research is needed to understand the wide range of recycling rates among local authorities employing the co-mingled system, and to understand what factors are associated with higher recycling rates.
+The obvious next step is to build peer groups of genuinely comparable authorities using these contextual factors, then compare collection systems within each peer group. That is the subject of the next phase of this project.
